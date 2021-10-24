@@ -1,0 +1,477 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* Global */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+ul{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+/* Header */
+
+header{
+    background-color: #fff;
+}
+
+.mainHeader{
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat( 5 , 1fr );
+    justify-content: center;
+    align-content: center;
+}
+
+.logo{
+    grid-column: 2/3;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.menuBox{
+    grid-column: 3/5;
+}
+.menuItem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menuItem li{
+    align-self: center;
+    justify-self: center;
+    padding: 8px;
+}
+.menuItem li a{
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Showcase */
+
+.showcase{
+    background-color: #f9f9ff;
+}
+
+.mainShowcase{
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat( 5 , 1fr );
+    justify-content: center;
+    align-content: center;
+}
+
+.myInfo{
+    grid-column: 2/4;
+    padding-top: 30px;
+}
+.myInfo h5{
+    color: #222;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.myInfo h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    padding: 20px 0;
+}
+.myInfo p{
+    font-size: 18px;
+    padding: 0 0 10px 0;
+    color: #7f7f7f;
+}
+.myInfo button{
+    text-transform: uppercase;
+    padding: 10px 16px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right ,rgb(51, 132, 238),rgb(141, 141, 228));
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.myPhoto{
+    grid-column: 4/5;
+}
+.myPhoto img{
+    width: 100%;
+}
+
+
+/* Personal */
+
+.personalInfo{
+    padding: 50px 0;
+}
+.mainPersonalInfo{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat( 4 , 1fr);
+    justify-content: center;
+    align-content: center;
+}
+.mainPersonalInfoLeft{
+    justify-self: center;
+    align-self: center;
+    grid-column: 2/2;
+}
+.mainPersonalInfoLeft img{
+    width: 100%;
+}
+
+.mainPersonalInfoRight{
+    grid-column: 3/4;
+}
+.mainPersonalInfoRight h4{
+    color: #222;
+    text-transform: uppercase;
+}
+.mainPersonalInfoRight h1{
+    padding: 20px 0;
+    font-size: 30px;
+}
+.mainPersonalInfoRight p{
+    font-size: 20px;
+    color: #7f7f7f;
+    padding: 10px 0 20px 0;
+
+}
+.mainPersonalInfoRight button{
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right ,rgb(51, 132, 238),rgb(141, 141, 228));
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Service */
+
+.service{
+    background-color: #f9f9ff;
+    padding: 70px 0;
+}
+.mainService{
+    display: grid;
+    grid-template-columns: repeat( 5 , 1fr );
+}
+.mainService h1{
+    grid-column: 2/5;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px 0;
+}
+.mainService p{
+    grid-column: 2/5;
+    color: #222;
+    text-align: center;
+}
+
+.mainServiceList{
+    padding: 70px 0 0 0 ;
+    grid-column: 2/5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    align-content: center;
+}
+.serviceBox{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    flex: 1 1 30%;
+}
+.serviceBox i{
+    align-self: center;
+    color: #333;
+    padding: 0 0 15px 0;
+    font-size: 35px;
+}
+.serviceBox h3{
+    font-size: 20px;
+    padding: 10px 0;
+    color: #333;
+}
+.serviceBox p{
+    color: #7f7f7f;
+}
+
+/* Priceing */
+
+.priceing{
+    padding: 50px 0;
+}
+.mainPricing{
+    display: grid;
+    grid-template-columns: repeat( 5 , 1fr );
+    gap: 20px;
+}
+
+.priceHeader{
+    grid-column: 2/5;
+    padding: 50px 0;
+}
+.priceHeader h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.priceHeader p{
+    text-align: center;
+}
+
+.priceBox{
+    border: 5px solid #e6e6e6;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+}
+.priceBox div{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+}
+.p-one{
+    grid-column: 2/3;
+}
+
+.p-two{
+    grid-column: 3/4;
+}
+.p-three{
+    grid-column: 4/5;
+}
+
+
+.priceBox h3{
+    padding: 10px;
+    font-size: 20px;
+    color: #8c8c8c;
+}
+
+.priceSign{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.priceAmount{
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: 600;
+    color: #333;
+}
+.priceBox ul{
+    border-top: 1px solid #333;
+
+    text-align: none;
+    font-size: 20px;
+    font-family: Roboto ;
+    font-weight: 200 ;
+    padding: 20px 0;
+    color: #737373;
+}
+.priceBox ul li{
+    margin: 15px 0;
+}
+.priceBox ul li i{
+    margin-right: 5px;
+    color: #80d4ff;
+}
+
+.priceBox button{
+    padding: 10px 20px;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid #ffdd99;
+    border-radius: 15px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffd480 ;
+}
+
+/* Massege */
+
+.massege{
+    background-color: #f9f9ff;
+    padding: 50px 0;
+}
+.mainMassege{
+    display: grid;
+    grid-template-columns: repeat( 5 , 1fr );
+    gap: 20px;
+}
+
+.mainMassegeHeader{
+    grid-column: 2/5;
+    text-align: center;
+    padding: 50px 0;
+}
+.mainMassegeHeader h1{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.mainMassegeLeft{
+    grid-column: 2/3;
+}
+.mainMassegeLeft label{
+    display: block;
+    padding: 5px 0;
+    font-family: cursive;
+    font-weight: 600;
+}
+
+.mainMassegeLeft input{
+    outline: none;
+    border: 2px solid #e6e6e6;
+    padding: 10px ;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.mainMassegeLeft .button{
+    margin: 15px 0;
+    background-image: linear-gradient(to right ,rgb(51, 132, 238),rgb(141, 141, 228));
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.mainMassegeRight{
+    grid-column: 3/5;
+}
+
+.mainMassegeRight{}
+.mainMassegeRight label{
+    display: block;
+    padding: 5px 0;
+    font-family: cursive;
+    font-weight: 600;
+}
+.mainMassegeRight textarea{
+    width: 90%;
+    height: 58.5%;
+    outline: none;
+    border: 2px solid #e6e6e6;
+    padding: 10px ;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat( 5 , 1fr );
+}
+.mainFooter{
+    grid-column: 2/5;
+}
+.footerBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.footerBox1{
+    flex: 1 1 30%;
+}
+.footerBox1 h2{
+    border-bottom: 1px solid #eee;
+}
+.footerBox1 p{
+    padding: 10px 0;
+}
+.footerSocialIcon{
+    font-size: 20px;
+    color: rgb(200, 187, 212);
+}
+.footerSocialIcon ul{
+    margin: 0;
+    padding: 15px 0;
+}
+.footerSocialIcon ul li{
+    display: inline;
+}
+.footerSocialIcon ul li i{
+    margin-right: 10px;
+}
+.footerSocialIcon ul li a{}
+
+
+.footerBox2{
+    flex: 1 1 20%;
+}
+.footerBox2 h2{
+    border-bottom: 1px solid #eee;
+}
+.footerBox2 ul{
+    padding: 10px 0;
+}
+.footerBox2 ul li:not(:first-child){
+    margin: 5px 0;
+}
+.footerBox2 ul li a{}
+
+
+.footerBox3{
+    flex: 1 1 30%;
+}
+.footerBox3 h2{
+    border-bottom: 1px solid #eee;
+}
+.footerBox3 p{
+    padding: 10px 0;
+}
+.addressWithIcon{}
+.addressWithIcon ul{}
+.addressWithIcon ul li{
+    margin: 5px 0;
+}
